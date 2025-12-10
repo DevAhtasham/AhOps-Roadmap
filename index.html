@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHOPS - Product Roadmap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#0A1A2F',
+                        surface: '#112240',
+                        primary: '#1E4BB8',
+                        'primary-light': '#4C8DFF',
+                        secondary: '#E9F0FF',
+                        accent: '#64FFDA',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass {
+            background: rgba(17, 34, 64, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(76, 141, 255, 0.1);
+        }
+        .glow {
+            box-shadow: 0 0 20px rgba(30, 75, 184, 0.3);
+        }
+        .timeline-line {
+            background: linear-gradient(to bottom, #1E4BB8, #4C8DFF, #1E4BB8);
+        }
+    </style>
+</head>
+<body class="bg-background text-secondary antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-primary-light flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                        A
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-white">AHOPS</span>
+                        <span class="text-xs text-gray-400 block -mt-1">Roadmap</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-primary-light transition-colors">Overview</a>
+                        <a href="#timeline" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Timeline</a>
+                        <a href="#features" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Features</a>
+                        <a href="#" class="bg-primary hover:bg-primary-light text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-lg hover:shadow-primary/25">
+                            Go to Dashboard
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-32 pb-20 sm:pt-40 sm:pb-24 overflow-hidden">
+        <!-- Background Gradients -->
+        <div class="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full z-0 pointer-events-none">
+            <div class="absolute top-20 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl mix-blend-screen animate-pulse"></div>
+            <div class="absolute top-40 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl mix-blend-screen" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass border border-primary/30 text-primary-light text-xs font-medium mb-6">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-light opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-light"></span>
+                </span>
+                Phase 1 In Progress
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-bold text-white tracking-tight mb-6">
+                Building the Future of <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-white">AI Deployment</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400">
+                Follow our development journey as we build AHOPS — the easiest way to deploy AI models.
+            </p>
+            
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="#timeline" class="px-8 py-3 rounded-xl bg-white text-background font-semibold hover:bg-gray-100 transition-colors shadow-lg shadow-white/10">
+                    View Timeline
+                </a>
+                <a href="#suggest" class="px-8 py-3 rounded-xl glass text-white font-semibold hover:bg-white/5 transition-colors border border-white/10">
+                    Suggest Feature
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="glass p-6 rounded-2xl border-t border-white/5">
+                <div class="text-3xl font-bold text-white mb-1">1</div>
+                <div class="text-sm text-gray-400">Current Phase</div>
+            </div>
+            <div class="glass p-6 rounded-2xl border-t border-white/5">
+                <div class="text-3xl font-bold text-primary-light mb-1">90%</div>
+                <div class="text-sm text-gray-400">Phase 1 Progress</div>
+            </div>
+            <div class="glass p-6 rounded-2xl border-t border-white/5">
+                <div class="text-3xl font-bold text-white mb-1">4</div>
+                <div class="text-sm text-gray-400">Total Phases</div>
+            </div>
+            <div class="glass p-6 rounded-2xl border-t border-white/5">
+                <div class="text-3xl font-bold text-accent mb-1">v0.1</div>
+                <div class="text-sm text-gray-400">Current Version</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-20 bg-surface/30 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Development Phases</h2>
+                <p class="mt-4 text-gray-400">Our roadmap to building the ultimate AI deployment platform</p>
+            </div>
+
+            <div class="relative">
+                <!-- Vertical Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full timeline-line rounded-full opacity-20 hidden md:block"></div>
+
+                <!-- Phase 1: Current -->
+                <div class="relative z-10 mb-16 md:flex justify-between items-center group">
+                    <div class="md:w-5/12 mb-8 md:mb-0 text-right pr-8 transform transition-all duration-500 hover:-translate-x-2">
+                        <div class="glass p-8 rounded-2xl border-l-4 border-primary relative overflow-hidden glow">
+                            <div class="absolute top-0 right-0 p-4 opacity-10">
+                                <svg class="w-24 h-24 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            </div>
+                            <span class="inline-block px-3 py-1 bg-primary/20 text-primary-light rounded-full text-xs font-semibold mb-3 animate-pulse">In Progress — 90%</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">Phase 1: Foundation & UI</h3>
+                            <p class="text-gray-400 text-sm mb-4">Building the core platform interface and essential features.</p>
+                            
+                            <!-- Progress Bar -->
+                            <div class="mb-4">
+                                <div class="w-full bg-white/10 rounded-full h-2">
+                                    <div class="bg-gradient-to-r from-primary to-primary-light h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <ul class="text-gray-300 text-sm space-y-2">
+                                <li class="flex items-center justify-end gap-2"><svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Dashboard UI Design</li>
+                                <li class="flex items-center justify-end gap-2"><svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Landing Page</li>
+                                <li class="flex items-center justify-end gap-2"><svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Authentication System</li>
+                                <li class="flex items-center justify-end gap-2"><svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Model Library UI</li>
+                                <li class="flex items-center justify-end gap-2"><svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Infrastructure Dashboard</li>
+                                <li class="flex items-center justify-end gap-2"><svg class="w-4 h-4 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Settings & Integrations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center w-14 h-14 rounded-full bg-surface border-4 border-primary z-20 shadow-lg shadow-primary/50 hidden md:flex">
+                        <span class="text-primary font-bold text-xs">NOW</span>
+                    </div>
+
+                    <div class="md:w-5/12 pl-8 opacity-0 hidden md:block"></div>
+                </div>
+
+                <!-- Phase 2: Coming Soon -->
+                <div class="relative z-10 mb-16 md:flex justify-between items-center flex-row-reverse group">
+                    <div class="md:w-5/12 mb-8 md:mb-0 text-left pl-8 transform transition-all duration-500 hover:translate-x-2">
+                        <div class="glass p-8 rounded-2xl border-l-4 border-gray-600 relative overflow-hidden opacity-70">
+                            <span class="inline-block px-3 py-1 bg-white/5 text-gray-400 rounded-full text-xs font-semibold mb-3">Coming Soon</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">Phase 2: Backend & API</h3>
+                            <p class="text-gray-400 text-sm mb-4">Core backend services and API infrastructure.</p>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gray-600"></span> Model Upload Service</li>
+                                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gray-600"></span> Validation & Security Scanning</li>
+                                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gray-600"></span> REST API Endpoints</li>
+                            </ul>
+                            <div class="mt-4 text-xs text-gray-500">Details will be updated soon</div>
+                        </div>
+                    </div>
+
+                    <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-surface border-4 border-gray-600 z-20 hidden md:flex">
+                        <span class="text-gray-500 font-bold text-xs">2</span>
+                    </div>
+
+                    <div class="md:w-5/12 pr-8 opacity-0 hidden md:block"></div>
+                </div>
+
+                <!-- Phase 3: Coming Soon -->
+                <div class="relative z-10 mb-16 md:flex justify-between items-center group">
+                    <div class="md:w-5/12 mb-8 md:mb-0 text-right pr-8 transform transition-all duration-500 hover:-translate-x-2">
+                        <div class="glass p-8 rounded-2xl border-l-4 border-gray-600 relative overflow-hidden opacity-70">
+                            <span class="inline-block px-3 py-1 bg-white/5 text-gray-400 rounded-full text-xs font-semibold mb-3">Coming Soon</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">Phase 3: Deployment</h3>
+                            <p class="text-gray-400 text-sm mb-4">Container orchestration and cloud deployment.</p>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li class="flex items-center justify-end gap-2">Docker Containerization <span class="w-2 h-2 rounded-full bg-gray-600"></span></li>
+                                <li class="flex items-center justify-end gap-2">Cloud Provider Integration <span class="w-2 h-2 rounded-full bg-gray-600"></span></li>
+                                <li class="flex items-center justify-end gap-2">Auto-scaling Infrastructure <span class="w-2 h-2 rounded-full bg-gray-600"></span></li>
+                            </ul>
+                            <div class="mt-4 text-xs text-gray-500">Details will be updated soon</div>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-surface border-4 border-gray-600 z-20 hidden md:flex">
+                        <span class="text-gray-500 font-bold text-xs">3</span>
+                    </div>
+
+                    <div class="md:w-5/12 pl-8 opacity-0 hidden md:block"></div>
+                </div>
+
+                <!-- Phase 4: Coming Soon -->
+                <div class="relative z-10 mb-16 md:flex justify-between items-center flex-row-reverse group">
+                    <div class="md:w-5/12 mb-8 md:mb-0 text-left pl-8 transform transition-all duration-500 hover:translate-x-2">
+                        <div class="glass p-8 rounded-2xl border-l-4 border-gray-600 relative overflow-hidden opacity-70">
+                            <span class="inline-block px-3 py-1 bg-white/5 text-gray-400 rounded-full text-xs font-semibold mb-3">Coming Soon</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">Phase 4: Monitoring & Scale</h3>
+                            <p class="text-gray-400 text-sm mb-4">Advanced monitoring and enterprise features.</p>
+                            <ul class="text-gray-400 text-sm space-y-2">
+                                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gray-600"></span> Real-time Metrics</li>
+                                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gray-600"></span> Alerting System</li>
+                                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gray-600"></span> Team Collaboration</li>
+                            </ul>
+                            <div class="mt-4 text-xs text-gray-500">Details will be updated soon</div>
+                        </div>
+                    </div>
+
+                    <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-surface border-4 border-gray-600 z-20 hidden md:flex">
+                        <span class="text-gray-500 font-bold text-xs">4</span>
+                    </div>
+
+                    <div class="md:w-5/12 pr-8 opacity-0 hidden md:block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Request Section -->
+    <section id="suggest" class="py-20 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass rounded-3xl p-8 md:p-12 text-center border border-primary/20">
+                <h2 class="text-3xl font-bold text-white mb-4">Have an Idea?</h2>
+                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                    We're building AHOPS for developers like you. Let us know what features would make your life easier.
+                </p>
+                
+                <form class="max-w-md mx-auto space-y-4 text-left">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-1">Feature Title</label>
+                        <input type="text" class="w-full bg-surface/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="e.g., Slack Notifications">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-1">Description</label>
+                        <textarea rows="3" class="w-full bg-surface/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Explain how this helps..."></textarea>
+                    </div>
+                    <button type="button" class="w-full bg-primary hover:bg-primary-light text-white font-bold py-3 px-4 rounded-lg transition-all shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1">
+                        Submit Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 bg-surface/50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                 <div class="w-6 h-6 rounded bg-gradient-to-br from-primary to-primary-light flex items-center justify-center text-white font-bold text-xs">
+                    A
+                </div>
+                <span class="text-lg font-bold text-white">AHOPS</span>
+                <span class="text-sm text-gray-500 ml-2">© 2025</span>
+            </div>
+            <div class="flex space-x-6 text-sm text-gray-400">
+                <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms</a>
+                <a href="#" class="hover:text-white transition-colors">Twitter</a>
+                <a href="#" class="hover:text-white transition-colors">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll reveal animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.glass').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
